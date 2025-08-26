@@ -1,0 +1,33 @@
+/* 모바일 앱 전용 스타일 */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 430px; /* iPhone 14 Pro Max 너비 */
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 터치 친화적 버튼 */
+button {
+  min-height: 44px; /* iOS 터치 타겟 권장 크기 */
+  min-width: 44px;
+}
+
+/* 모바일 네비게이션 */
+nav button {
+  transition: all 0.2s ease;
+}
+
+nav button:active {
+  transform: scale(0.95);
+}
+
+/* 카드 호버 효과 */
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+}
